@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Couleur.css">
+
+        <title>Couleur</title>
+    </head>
+    <body>
+        <section>
+            <h1><span class="degrade">Couleurs de texte</span></h1>
+            <pre>.degrade {
+                background: linear-gradient(90deg, rgb(255, 174, 0) 0%, rgb(90, 221, 14) 25%, rgb(23, 93, 224) 50%, rgb(197, 27, 189) 75%, rgb(255, 0, 0) 100%);
+                background-clip: text;
+                color: transparent;
+                display: inline;
+            }</pre> <br />
+            <a href="hexcolorcodes.org">hexcolorcodes.org</a> <br />
+            <a href="https://cssgradient.io/">https://cssgradient.io/</a>
+            <p class="rouge">Texte en rouge</p>
+            <pre>color: rgb(255, 0, 0);</pre><br />
+            <p class="jaune">Texte en jaune</p>
+            <pre>color: yellow;</pre><br />
+            <p class="opacite">Texte opaque ou transparent</p><br />
+            <pre>.opacite {
+                background: linear-gradient(45deg, rgb(0,0,0,255), rgb(0,0,0,0));
+                background-clip: text;
+                color: transparent;
+                display: inline;
+            }</pre><br />
+            <p><span class="blanc">Texte en blanc</span></p>
+            <pre>background-color: rgb(255, 0, 0);
+color: rgb(255, 255, 255);</pre><br />
+        </section>
+        <section class="carre">
+            <h1><span class="degrade">Couleurs de div</span></h1>
+            <div class="carre_rouge"></div>
+            <pre>background-color: red;</pre><br />
+            <div class="carre_bord_rouge"></div>
+            <pre>border: solid 3px red;</pre><br />
+            <div class="carre_gradient"><div class="inside"></div></div>
+            <pre>width: 99%; height: 99%; background-color: white; margin: 1px 1px;</pre><br />
+            <div class="carre_opaque"></div>
+            <pre>background: linear-gradient(90deg, rgb(0,0,0,255), rgb(0,0,0,0));</pre><br />
+            <div class="carre_gradient"></div>
+            <pre>background: linear-gradient(90deg, rgb(219, 167, 55) 0%, rgb(95, 145, 66) 25%, rgb(48, 94, 180) 50%, rgb(90, 22, 87) 75%, rgb(187, 80, 80)100%);</pre><br />
+            <div class="carre_gradient2"></div>
+            <pre>background: linear-gradient(0deg, rgb(255, 0, 0) 0%, rgb(89, 211, 18) 25%, rgb(48, 180, 169) 50%, rgb(23, 22, 90) 75%, rgb(221, 10, 133)100%);</pre><br />
+            <div class="carre_gradient3"></div>
+            <pre>background: linear-gradient(45deg, rgb(99, 55, 219) 0%, rgb(117, 145, 66) 25%, rgb(160, 180, 48) 50%, rgb(165, 13, 157) 75%, rgb(51, 19, 19)100%);</pre><br />
+            <div class="carre_gradient4"></div>
+            <pre>background: repeating-linear-gradient(135deg, rgb(99, 55, 219) 0%, rgb(230, 226, 2) 25%);</pre><br />
+            <div class="carre_gradient5"></div>
+            <pre>background: repeating-conic-gradient( rgb(99, 55, 219) 0%, rgb(99, 55, 219) 10%, rgb(87, 58, 165) 10%, rgb(87, 58, 165) 20%);</pre><br />
+        </section>
+        <section class="rond">
+            <h1><span class="degrade">Couleurs de div</span></h1>
+            <div class="rond_gradient"></div>
+            <pre>background: radial-gradient( rgb(223, 8, 8), rgb(255, 251, 0), rgb(0,0,0,0));</pre><br />
+            <div class="rond_gradient2"></div>
+            <pre>background: radial-gradient(closest-side at 40% 40%, rgb(223, 8, 8), rgb(255, 251, 0), rgb(187, 255, 0));</pre><br />
+            <div class="rond_gradient3"></div>
+            <pre>background: repeating-radial-gradient( rgb(223, 8, 8) 10%, rgb(149, 223, 100) 15%,rgb(255, 255, 0) 17.5%, rgb(149, 223, 100) 20%, rgb(223, 8, 8) 30%);</pre><br />
+            <div class="rond_gradient4"></div>
+            <pre>background: conic-gradient( rgb(223, 8, 8), rgb(255, 251, 0), rgb(0, 0, 0)) ;</pre><br />
+        </section>
+    </body>
+</html>
